@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  phone: 1
+  lease_time: 2012-06-12
+  lease_panding: 2012-06-12
+  cost_year: 1.5
+
+two:
+  name: MyString
+  phone: 1
+  lease_time: 2012-06-12
+  lease_panding: 2012-06-12
+  cost_year: 1.5

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kurdysfruits</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="page">
+    <div id="navmenu">
+      
+      <ul id="list">
+        
+        <li><h2 id="navbottom">Plants Type</h2>
+          <p>
+            <a href="/plantstypes/new">new</a><br />
+            <a href="/plantstypes">list</a><br />
+          </p>
+        </li>
+          
+        <li><h2 id="navbottom">Plant</h2>
+          <p>
+            <a href="/plants/new">new</a><br />
+            <a href="/plants">list</a><br />
+          </p>
+        </li>
+         
+        <li><h2 id="navbottom">Crop</h2>
+          <p>
+            <a href="/crops/new">new</a><br />
+            <a href="/crops">list</a><br />
+          </p>
+        </li>
+        <li><h2 id="navbottom">Farm</h2>
+          <p>
+            <a href="/farms/new">new</a><br />
+            <a href="/farms">list</a><br />
+          </p>
+        </li>
+        <li><h2 id="navbottom">Lease</h2>
+          <p>
+            <a href="/leases/new">new</a><br />
+            <a href="/leases">list</a><br />
+          </p>
+        </li>
+        <li><h2 id="navbottom">Plot</h2>
+          <p>
+            <a href="/plots/new">new</a><br />
+            <a href="/plots">list</a><br />
+          </p>
+        </li>
+        <li><h2 id="navbottom">Season</h2>
+          <p>
+            <a href="/seasons/new">new</a><br />
+            <a href="/seasons">list</a><br />
+          </p>
+        </li>
+        
+      </ul>
+      
+    </div>
+    
+    <div id="box">
+      <div id="navlog">
+        logowanie i te sprawy
+      </div>
+      
+      <div id="logo">
+        
+      </div>
+      
+      <div id="content">
+      <%= yield %>
+      </div>
+      
+    </div> 
+
+ </div>
+ 
+
+</body>
+</html>

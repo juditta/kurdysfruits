@@ -1,0 +1,33 @@
+<h1>Listing plots</h1>
+
+<table>
+  <tr>
+    <th>Nr dz ew</th>
+    <th>Season</th>
+    <th>Farm</th>
+    <th>Aera</th>
+    <th>Lease</th>
+    <th>Plant</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @plots.each do |plot| %>
+  <tr>
+    <td><%= plot.nr_dz_ew %></td>
+    <td><%= plot.season_id %></td>
+    <td><%= plot.farm_id %></td>
+    <td><%= plot.aera %></td>
+    <td><%= plot.lease_id %></td>
+    <td><%= plot.plant_id %></td>
+    <td><%= link_to 'Show', plot %></td>
+    <td><%= link_to 'Edit', edit_plot_path(plot) %></td>
+    <td><%= link_to 'Destroy', plot, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Plot', new_plot_path %>

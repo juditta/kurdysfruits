@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @crop.date %>
+</p>
+
+<p>
+  <b>Plot:</b>
+  <%= @crop.plot_id %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @crop.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_crop_path(@crop) %> |
+<%= link_to 'Back', crops_path %>

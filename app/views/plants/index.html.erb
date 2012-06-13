@@ -1,0 +1,27 @@
+<h1>Listing plants</h1>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Strain</th>
+    <th>Picture</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @plants.each do |plant| %>
+  <tr>
+    <td><%= plant.type_id %></td>
+    <td><%= plant.strain %></td>
+    <td><%= plant.picture %></td>
+    <td><%= link_to 'Show', plant %></td>
+    <td><%= link_to 'Edit', edit_plant_path(plant) %></td>
+    <td><%= link_to 'Destroy', plant, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Plant', new_plant_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@farm) do |f| %>
+  <% if @farm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@farm.errors.count, "error") %> prohibited this farm from being saved:</h2>
+
+      <ul>
+      <% @farm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :farm_name %><br />
+    <%= f.text_field :farm_name %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :regon %><br />
+    <%= f.number_field :regon %>
+  </div>
+  <div class="field">
+    <%= f.label :nip %><br />
+    <%= f.number_field :nip %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br />
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :post_code %><br />
+    <%= f.number_field :post_code %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.number_field :phone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

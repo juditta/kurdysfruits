@@ -1,0 +1,35 @@
+<%= form_for(@plantstype) do |f| %>
+  <% if @plantstype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plantstype.errors.count, "error") %> prohibited this plantstype from being saved:</h2>
+
+      <ul>
+      <% @plantstype.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+////////////////////////////////////////////////////////////
+<%= form_tag("/search", :method => "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %><br />
+  
+  /////////////////////
+  
+  form_tag(:controller => "people", :action => "search", :method => "get", :class => "nifty_form")
+# => '<form accept-charset="UTF-8" action="/people/search?method=get&class=nifty_form" method="post">'
+  
+  
+  /////////////////////////////////////////////////////
+  <div class="field">
+    <%= f.label :plantstype %><br />
+    <%= f.text_field :plantstype %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

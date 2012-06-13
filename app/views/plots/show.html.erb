@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nr dz ew:</b>
+  <%= @plot.nr_dz_ew %>
+</p>
+
+<p>
+  <b>Season:</b>
+  <%= @plot.season_id %>
+</p>
+
+<p>
+  <b>Farm:</b>
+  <%= @plot.farm_id %>
+</p>
+
+<p>
+  <b>Aera:</b>
+  <%= @plot.aera %>
+</p>
+
+<p>
+  <b>Lease:</b>
+  <%= @plot.lease_id %>
+</p>
+
+<p>
+  <b>Plant:</b>
+  <%= @plot.plant_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_plot_path(@plot) %> |
+<%= link_to 'Back', plots_path %>

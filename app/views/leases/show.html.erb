@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @lease.name %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @lease.phone %>
+</p>
+
+<p>
+  <b>Lease time:</b>
+  <%= @lease.lease_time %>
+</p>
+
+<p>
+  <b>Lease panding:</b>
+  <%= @lease.lease_panding %>
+</p>
+
+<p>
+  <b>Cost year:</b>
+  <%= @lease.cost_year %>
+</p>
+
+
+<%= link_to 'Edit', edit_lease_path(@lease) %> |
+<%= link_to 'Back', leases_path %>

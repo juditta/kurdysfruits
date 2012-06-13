@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @plant.type_id %>
+</p>
+
+
+<p>
+  
+  <b>Strain:</b>
+  <%= @plant.strain %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag(@plant.picture_url, :width => 600) if @plant.picture.present? %>
+</p>
+
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

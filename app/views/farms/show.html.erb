@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Farm name:</b>
+  <%= @farm.farm_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @farm.name %>
+</p>
+
+<p>
+  <b>Regon:</b>
+  <%= @farm.regon %>
+</p>
+
+<p>
+  <b>Nip:</b>
+  <%= @farm.nip %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%= @farm.street %>
+</p>
+
+<p>
+  <b>Post code:</b>
+  <%= @farm.post_code %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @farm.city %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @farm.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_farm_path(@farm) %> |
+<%= link_to 'Back', farms_path %>

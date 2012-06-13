@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nr_dz_ew: MyString
+  season_id: 1
+  farm_id: 1
+  aera: MyString
+  lease_id: 1
+  plant_id: 1
+
+two:
+  nr_dz_ew: MyString
+  season_id: 1
+  farm_id: 1
+  aera: MyString
+  lease_id: 1
+  plant_id: 1

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2012-06-12
+  plot_id: 1
+  quantity: 1.5
+
+two:
+  date: 2012-06-12
+  plot_id: 1
+  quantity: 1.5

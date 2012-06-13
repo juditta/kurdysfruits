@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  farm_name: MyString
+  name: MyString
+  regon: 1
+  nip: 1
+  street: MyString
+  post_code: 1
+  city: MyString
+  phone: 1
+
+two:
+  farm_name: MyString
+  name: MyString
+  regon: 1
+  nip: 1
+  street: MyString
+  post_code: 1
+  city: MyString
+  phone: 1

@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #ffffcc;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #000;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #000033;
+        text-align: center;
+      }
+
+      a  {color: #000;
+           }
+      a:hover {
+        color: #000;
+        text-decoration: none;
+      }
+
+      #page,#navmenu, #box, #navlogo, #logo, #content{
+        display: block;
+      }
+      
+      #page {
+        background: #ffffcc url("/assets/page1.jpg");
+        width: 1400px;
+        height: 1240px;
+        margin: 20;
+        margin: auto;
+      }
+      #navmenu{
+        float: left;
+        height: 1000px;
+        width: 160px;
+        margin-top:220px;
+        margin-left: 55px;
+        /*background: #33ffcc;*/
+        /*border: 20px solid #cc0033;  
+        border-right: none;*/
+        text-align: center;
+      }
+
+      #box{
+        position: absolute;
+        height: 1200px;
+        width: 1000px;
+        margin:0px 213px;
+      }
+      #navlog, #logo, #content{
+        width: 960px;
+        margin: auto;
+      }
+      #navlog{
+        height: 20px;
+       
+      }
+      #logo{
+        height: 200px;
+        background: #ffcc44 url("/assets/logogreen1.jpg");
+      }
+      #content {
+        background: #ffffcc url("/assets/content.jpg");
+        width:920px;
+        height: 920px;
+        padding:20px;
+        
+      }
+#navmenu a {
+    text-decoration: none;
+    color: #000033;
+}
+#navmenu a:hover{
+    text-decoration: none;
+    background: none;
+    margin-left:20px;
+    font-size: larger;
+}
+#navmenu ul{
+   
+    list-style-type: none;
+    color: #669900;
+    }
+#navbottom{
+    display: block;
+    background: #000033 url("/assets/bottom.jpg") repeat-y;
+    width: 140px;
+    hight: 40px;
+    margin:auto;
+    padding:10px;
+    margin-left: -40px;
+
+    }
+#navmenu li.highlight{
+    background: #000;
+    color: #fff;
+}
+#navmenu ul#list li p  {
+    display: none;
+    background: #ffffcc;
+    
+    }
+table, td, th { vertical-align: middle !important; border: none !important; }
+th { border-bottom: 1px solid #DDD !important; }
+td.picture { width: 140px; }
+td.picture img { width: 140px; }
+/*
+      #sidebar {
+        float: right;
+        width: 175px;
+      }
+
+      #footer {
+        clear: both;
+      }
+
+      #header, #about, #getting-started {
+        padding-left: 75px;
+        padding-right: 30px;
+      }
+
+
+      #header {
+        background-image: url("/assets/rails.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        height: 64px;
+      }
+      #header h1, #header h2 {margin: 0}
+      #header h2 {
+        color: #888;
+        font-weight: normal;
+        font-size: 16px;
+      }
+*/

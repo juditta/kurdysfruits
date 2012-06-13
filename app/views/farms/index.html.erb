@@ -1,0 +1,37 @@
+<h1>Listing farms</h1>
+
+<table>
+  <tr>
+    <th>Farm name</th>
+    <th>Name</th>
+    <th>Regon</th>
+    <th>Nip</th>
+    <th>Street</th>
+    <th>Post code</th>
+    <th>City</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @farms.each do |farm| %>
+  <tr>
+    <td><%= farm.farm_name %></td>
+    <td><%= farm.name %></td>
+    <td><%= farm.regon %></td>
+    <td><%= farm.nip %></td>
+    <td><%= farm.street %></td>
+    <td><%= farm.post_code %></td>
+    <td><%= farm.city %></td>
+    <td><%= farm.phone %></td>
+    <td><%= link_to 'Show', farm %></td>
+    <td><%= link_to 'Edit', edit_farm_path(farm) %></td>
+    <td><%= link_to 'Destroy', farm, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Farm', new_farm_path %>
